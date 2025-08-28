@@ -31,7 +31,7 @@
 ## Requirements
 
 - **Docker** installed and running
-- A C/C++ source file (e.g., `native-lib.cpp`)
+- A C source file (e.g., `native-lib.c`)
 - (Optional) **ADB** if you want to push/test the library on a device
 
 
@@ -43,7 +43,7 @@ alc-docker/
 └─ native-lib.c   # Your C code (example below)
 ```
 
-Example `native-lib.cpp` (mirrors the reference snippet):
+Example `native-lib.c` (mirrors the reference snippet):
 
 ```c
 #include <jni.h>
